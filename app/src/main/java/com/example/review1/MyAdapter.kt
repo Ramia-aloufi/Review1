@@ -43,6 +43,9 @@ class MyAdapter(val activity: Context,var item:ArrayList<MyImg>):RecyclerView.Ad
             if (activity is MainActivity) {
                 ll.setOnClickListener { activity.showimg(items.img) }
             }
+            if (activity is MainActivity2) {
+                ll.setOnClickListener { activity.showimg(items.img) }
+            }
             imageView3.setOnClickListener {
                 if (!items.ischecked){
                     items.ischecked = true
